@@ -99,7 +99,7 @@
   - *空间复杂度*：只需要常数级别的额外空间，空间复杂度为 $O(1)$。
 #colbreak()
   = 代码实现
-  #raw(read("rand-picker.cpp"), lang: "cpp") <small-code>
+  #raw(read("solution.cpp"), lang: "cpp") <small-code>
 
   = 运行结果
   ```sh
