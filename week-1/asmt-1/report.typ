@@ -4,7 +4,7 @@
 #import "@preview/wrap-it:0.1.1": *
 #import "@preview/cetz:0.4.2"
 
-#show <small-code>: set text(size: 0.7em)
+#show <small-code>: set text(size: 0.75em)
 #show <small-code>: set par(first-line-indent: 0em, justify: false)
 
 #show: article.with(
@@ -97,18 +97,16 @@
   == 复杂度分析
   - *时间复杂度*：每个元素被访问一次，时间复杂度为 $O(n)$。
   - *空间复杂度*：只需要常数级别的额外空间，空间复杂度为 $O(1)$。
-#colbreak()
+
   = 代码实现
   #raw(read("solution.cpp"), lang: "cpp") <small-code>
 
   = 运行结果
   ```sh
-  $ ./rand-picker.out
   Parameters: totalNumbers = 10000, pickCount = 5000
-
   --- Benchmark Results (1000 iterations) ---
   pickRandom: 1322577667ns
   pickRandomFisherYates: 185215917ns
   Speedup: 7.14073x
-  ``` <small-code>
+  ```
 ]
